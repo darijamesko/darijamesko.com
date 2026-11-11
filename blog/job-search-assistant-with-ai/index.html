@@ -188,6 +188,16 @@ a{color:inherit}
 .cta h2 span{color:var(--gold-2);display:block;padding-left:.6em}
 .cta p{margin:0 0 30px;font-size:17px;color:var(--text-2);max-width:32em}
 
+
+/* cookie banner */
+.cc{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(34,7,28,.97);border-top:1px solid rgba(212,175,106,.6);box-shadow:0 -12px 30px rgba(0,0,0,.35)}
+.cc .wrap{display:flex;align-items:center;gap:28px;padding-top:16px;padding-bottom:16px}
+.cc p{margin:0;flex:1;font-size:15px;line-height:1.55;color:var(--text-2)}
+.cc p a{color:var(--gold-2);white-space:nowrap}
+.cc-b{display:flex;gap:14px;flex-shrink:0}
+.cc-b .oval{justify-content:center;min-width:132px;padding:12px 24px;font-size:12px;cursor:pointer;background:none;font-family:Prata,Georgia,serif;font-weight:400}
+.legal .ccset{background:none;border:0;padding:0;margin-left:18px;color:inherit;font:inherit;cursor:pointer}.legal .ccset:hover{color:var(--gold-2)}
+@media (max-width:760px){.cc .wrap{flex-direction:column;align-items:stretch;gap:12px;padding-top:14px;padding-bottom:14px}.cc p{font-size:14px}.cc-b .oval{flex:1;min-width:0}}
 /* footer */
 footer{padding:50px 0 28px;position:relative}
 footer:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(1120px,90%);height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,106,.55),transparent)}
@@ -478,7 +488,7 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
         </ul>
       </div>
     </div>
-    <div class="legal"><span>© <span id="yr">2026</span> Darija Meško</span><span><a href="/terms-and-privacy/">Terms and privacy</a></span></div>
+    <div class="legal"><span>© <span id="yr">2026</span> Darija Meško</span><span><a href="/terms-and-privacy/">Terms and privacy</a><button type="button" class="ccset" id="ccSet">Cookie settings</button></span></div>
   </div>
 </footer>
 
@@ -498,7 +508,7 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
       if(!inp.value||!inp.checkValidity()){inp.focus();box.textContent='Please enter a valid email address.';box.hidden=false;return;}
       if(!url){box.textContent='Sign-up opens very soon. Until then, write to me at darija@darijamesko.com.';box.hidden=false;return;}
       var d=new FormData();d.append('fields[email]',inp.value);d.append('ml-submit','1');d.append('anticsrf','true');
-      fetch(url,{method:'POST',body:d,mode:'no-cors'}).then(function(){box.textContent=okMsg;box.hidden=false;inp.value='';}).catch(function(){box.textContent='Something went wrong. Please write to me at darija@darijamesko.com.';box.hidden=false;});
+      fetch(url,{method:'POST',body:d,mode:'no-cors'}).then(function(){if(window.dmTrack)dmTrack(url===ML.news?'newsletter_signup':'waitlist_signup',{});box.textContent=okMsg;box.hidden=false;inp.value='';}).catch(function(){box.textContent='Something went wrong. Please write to me at darija@darijamesko.com.';box.hidden=false;});
     });
   }
   var f=document.querySelector('.newsletter');subscribe(f,ML.news,'Thank you for subscribing. Please check your inbox, and the first career tips are on their way.',f.querySelector('.ok'));
@@ -521,6 +531,62 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
       (document.querySelector('.hero')||document.body).addEventListener('mousemove',function(e){if(!hp)return;var r=this.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;hp.style.transform='translate('+(x*14)+'px,'+(y*10)+'px)';});
     }
   }
+})();
+</script>
+
+<div class="cc" id="cc" role="region" aria-label="Cookie choice" hidden>
+  <div class="wrap">
+    <p>I use cookies to see which pages help visitors and which ads bring them here. You can accept or reject them, and the website works the same either way. <a href="/terms-and-privacy/#privacy">Privacy and cookies</a></p>
+    <div class="cc-b"><button type="button" class="oval light" id="ccNo">Reject</button><button type="button" class="oval light" id="ccYes">Accept</button></div>
+  </div>
+</div>
+<script>
+/* Tracking settings. aw: Google Ads tag id (AW-...). awLead: conversion for company enquiries. awBuy: optional purchase conversion. */
+window.DM={ph:'phc_x4uxtR9oLz8bVYSPKpAZbhcDF2ffE8BBa2mBfM7sh2YF',phHost:'https://eu.i.posthog.com',aw:'',awLead:'',awBuy:''};
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+gtag('set','ads_data_redaction',true);
+(function(){
+  var KEY='dm_consent',choice=null,adsOn=false,bar=document.getElementById('cc');
+  try{choice=localStorage.getItem(KEY);}catch(e){}
+  /* PostHog: queue calls until the library loads */
+  var ph=window.posthog=[];ph._i=[];ph.people=[];
+  ph.init=function(t,c,n){ph._i.push([t,c,n]);};
+  ['capture','register','opt_in_capturing','opt_out_capturing'].forEach(function(m){ph[m]=function(){ph.push([m].concat([].slice.call(arguments)));};});
+  ph.init(DM.ph,{api_host:DM.phHost,defaults:'2026-08-30',cookieless_mode:'on_reject',person_profiles:'identified_only',
+    loaded:function(p){try{var s=p.get_explicit_consent_status();if(s==='pending'&&choice==='granted')p.opt_in_capturing({capture_event_name:false});if(s==='pending'&&choice==='denied')p.opt_out_capturing();}catch(e){}}});
+  var sc=document.createElement('script');sc.async=true;sc.crossOrigin='anonymous';sc.src=DM.phHost.replace('.i.posthog.com','-assets.i.posthog.com')+'/static/array.js';document.head.appendChild(sc);
+  function loadAds(){
+    if(adsOn||!DM.aw)return;adsOn=true;
+    gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'});
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id='+DM.aw;document.head.appendChild(g);
+    gtag('js',new Date());gtag('config',DM.aw);
+  }
+  function track(ev,props,aw,val){
+    try{posthog.capture(ev,props||{});}catch(e){}
+    if(aw&&adsOn){gtag('event','conversion',{send_to:aw,value:val||1,currency:'EUR'});}
+  }
+  window.dmTrack=function(ev,props,isLead){track(ev,props,isLead?DM.awLead:null);};
+  function decide(v){
+    try{localStorage.setItem(KEY,v);}catch(e){}
+    var was=choice;choice=v;bar.hidden=true;
+    if(v==='granted'){posthog.opt_in_capturing();loadAds();}
+    else{posthog.opt_out_capturing();if(adsOn){gtag('consent','update',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});}}
+    posthog.capture('cookie_consent',{choice:v,changed:!!was});
+  }
+  document.getElementById('ccYes').addEventListener('click',function(){decide('granted');});
+  document.getElementById('ccNo').addEventListener('click',function(){decide('denied');});
+  document.getElementById('ccSet').addEventListener('click',function(){bar.hidden=false;document.getElementById('ccYes').focus();});
+  if(choice==='granted'){loadAds();}else if(!choice){bar.hidden=false;}
+  var company=/^\/(sl\/)?companies\//.test(location.pathname);
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a');if(!a)return;
+    var h=a.getAttribute('href')||'';
+    if(h.indexOf('mailto:')===0){var m=h.match(/subject=([^&]*)/);track('email_click',{subject:m?decodeURIComponent(m[1]):'',page:location.pathname},company?DM.awLead:null);}
+    else if(h.indexOf('https://buy.stripe.com/')===0){var c=a.parentNode,t=null;while(c&&c!==document.body&&!(t=c.querySelector('h3,h2'))){c=c.parentNode;}track('checkout_click',{link:h.split('/').pop(),product:t?t.textContent.trim():'',page:location.pathname});}
+  });
+  if(window.DM_PURCHASE){track('purchase',window.DM_PURCHASE,DM.awBuy,window.DM_PURCHASE.value);}
 })();
 </script>
 </body>

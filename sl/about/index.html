@@ -583,7 +583,7 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
 </div>
 <script>
 /* Tracking settings. aw: Google Ads tag id (AW-...). awLead: conversion for company enquiries. awBuy: optional purchase conversion. */
-window.DM={ph:'phc_x4uxtR9oLz8bVYSPKpAZbhcDF2ffE8BBa2mBfM7sh2YF',phHost:'https://eu.i.posthog.com',aw:'',awLead:'',awBuy:''};
+window.DM={ph:'phc_x4uxtR9oLz8bVYSPKpAZbhcDF2ffE8BBa2mBfM7sh2YF',phHost:'https://eu.i.posthog.com',aw:'AW-18569594689',awLead:'AW-18569594689/sMAPCLTctrYdEMGO1pZF',awBuy:''};
 window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
@@ -606,7 +606,7 @@ gtag('set','ads_data_redaction',true);
   }
   function track(ev,props,aw,val){
     try{posthog.capture(ev,props||{});}catch(e){}
-    if(aw&&adsOn){gtag('event','conversion',{send_to:aw,value:val||1,currency:'EUR'});}
+    if(aw&&adsOn){var o={send_to:aw};if(val){o.value=val;o.currency='EUR';}gtag('event','conversion',o);}
   }
   window.dmTrack=function(ev,props,isLead){track(ev,props,isLead?DM.awLead:null);};
   function decide(v){

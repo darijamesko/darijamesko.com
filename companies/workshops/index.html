@@ -370,11 +370,11 @@ footer li a{text-decoration:none;opacity:.9}footer li a:hover{color:var(--gold-2
 
 /* packages */
 .packages{padding:70px 0 60px}
-.pk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;align-items:center;max-width:1120px;margin:0 auto}
+.pk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px;align-items:stretch;max-width:1120px;margin:0 auto}
 .pk{position:relative;background:var(--cream) url(/assets/band-mid.webp) center/200% auto;color:var(--ink);padding:44px 30px 34px;border-radius:3px;box-shadow:0 22px 34px rgba(0,0,0,.45);clip-path:polygon(0 1.2%,6% 0,14% 1%,23% .2%,33% 1.1%,44% .1%,55% 1%,66% 0,77% 1.2%,88% .3%,100% 1%,99.4% 22%,100% 48%,99.3% 74%,100% 99%,89% 100%,76% 99.1%,63% 100%,50% 99.2%,37% 100%,24% 99.1%,12% 100%,0 99.2%,.6% 74%,0 50%,.7% 24%)}
-.pk:nth-child(1){transform:rotate(-1.5deg)}.pk:nth-child(3){transform:rotate(1.5deg)}
+
 .pk.rec{padding-top:58px;padding-bottom:44px;box-shadow:0 0 0 2px rgba(212,175,106,.0),0 28px 44px rgba(0,0,0,.55)}
-.pk-wrap{position:relative}
+.pk-wrap{position:relative;display:flex;flex-direction:column}.pk-wrap>.pk{flex:1;display:flex;flex-direction:column}.pk-wrap>.pk .oval{margin-top:auto}.pk-wrap:nth-child(1){margin-top:22%}.pk-wrap:nth-child(2){margin-top:11%}
 .pk.mid{padding-top:52px;padding-bottom:40px}
 .pk.rec{padding-top:64px;padding-bottom:52px}
 .pk-wrap.rec{z-index:1}
@@ -409,7 +409,7 @@ footer li a{text-decoration:none;opacity:.9}footer li a:hover{color:var(--gold-2
 @media (max-width:1080px){
   .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}
   .steps:before{display:none}
-  .pk-grid{grid-template-columns:1fr;max-width:440px;gap:50px}
+  .pk-grid{grid-template-columns:1fr;max-width:440px;gap:50px}.pk-grid .pk-wrap{margin-top:0}
   .pk:nth-child(1),.pk:nth-child(3){transform:none}
 }
 @media (max-width:820px){
@@ -650,7 +650,7 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
       <div class="rv d1">
         <h2 id="ct" class="script">Contact <span>me.</span></h2>
         <p class="txt">Write to me and tell me a little about your team and what is happening right now. I will get back to you personally, and together we will find the workshop that fits you best.</p>
-        <a class="mail" href="mailto:darija@darijamesko.com?subject=Hello%20from%20darijamesko.com">darija@darijamesko.com</a>
+        <a class="mail" href="mailto:darija@darijamesko.com?subject=Team%20workshop">darija@darijamesko.com</a>
         <div class="acts"><a class="oval light" href="/contact/">Book a call <span aria-hidden="true">→</span></a></div>
       </div>
     </div>
@@ -668,7 +668,7 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
       <div>
         <h3>Contact</h3>
         <ul>
-          <li><a href="mailto:darija@darijamesko.com?subject=Hello%20from%20darijamesko.com">darija@darijamesko.com</a></li>
+          <li><a href="mailto:darija@darijamesko.com?subject=Team%20workshop">darija@darijamesko.com</a></li>
           <li><a href="https://www.linkedin.com/in/darija-mesko/" rel="noopener">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/darija.mesko_globalhrpartner/" rel="noopener">Instagram</a></li>
           <li><a href="https://www.tiktok.com/@dee.global.career.coach" rel="noopener">TikTok</a></li>

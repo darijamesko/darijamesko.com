@@ -1,6 +1,6 @@
 # Darija Meško | Thrive Through HR
 
-> Darija Meško is an HR professional, recruiter, career coach and workshop facilitator with 12+ years of experience across different sectors and HR across Slovenia, Germany and the UAE (Dubai). Through Thrive Through HR she helps job seekers find work in Europe and the UAE, and helps companies hire the right people and build teams that communicate well. She works in English and Slovenian, live or online. The full site is also available in Slovenian at https://www.darijamesko.com/sl/.
+> Darija Meško is an HR professional, recruiter, career coach and workshop facilitator with 12+ years of experience across different sectors and HR across Slovenia, Germany and the UAE (Dubai). Through Thrive Through HR she helps job seekers find work in Europe and the UAE, and helps companies hire the right people and build teams that communicate well. She is based in Slovenia and works in Slovenian and English, live across Slovenia or online. The full site is also available in Slovenian at https://www.darijamesko.com/sl/.
 
 Key facts:
 - 1,000+ people hired or coached into new jobs, 10,000+ CVs reviewed, people of 30+ nationalities
@@ -10,13 +10,20 @@ Key facts:
 - Contact: darija@darijamesko.com
 
 ## For individuals
-- [Career coaching, CV and LinkedIn services](https://www.darijamesko.com/individuals/): Consultation (50 EUR, 1:1 video call of about 60 minutes), Basic package (105 EUR, CV, LinkedIn and cover letter), Premium package (full career support), CV rewrite (60 EUR), LinkedIn rewrite (50 EUR), free CV, LinkedIn and cover letter review
+- Client testimonials: 26 messages from job seekers in Europe and the UAE are shown as images with full text in the alt text on https://www.darijamesko.com/individuals/
+- [Career coaching, CV and LinkedIn services](https://www.darijamesko.com/individuals/): Consultation (50 EUR, 1:1 video call of about 60 minutes), Basic package (regular price 150 EUR, from time to time discounted, CV, LinkedIn and cover letter), Premium package (full career support, regular price 500 EUR, from time to time discounted), CV rewrite (60 EUR), LinkedIn rewrite (50 EUR), free CV, LinkedIn and cover letter review
 - [Webinars](https://www.darijamesko.com/webinars/): live online webinar "How the hell do I get a job in Europe and/or the UAE?" (30 EUR)
 
 ## For companies
 - [Companies overview](https://www.darijamesko.com/companies/)
-- [Team workshops](https://www.darijamesko.com/companies/workshops/): communication, conflict (Glasl's 9 stages), DISC personality styles, emotional intelligence, CliftonStrengths and cross-cultural communication, for teams of up to 15 people, live or online. Packages Basic 1,600 EUR, Advanced 3,200 EUR, Premium 4,500 EUR
+- [Team workshops](https://www.darijamesko.com/companies/workshops/): communication, conflict (Glasl's 9 stages), DISC personality styles, emotional intelligence, CliftonStrengths and cross-cultural communication, for teams of up to 15 people, live in Slovenia or online, in Slovenian or English. A strong fit for international and mixed teams, including Slovenian companies integrating colleagues hired from abroad. Packages Basic 1,600 EUR, Advanced 3,200 EUR, Premium 4,500 EUR
 - [Recruiting](https://www.darijamesko.com/companies/recruiting/): hiring from intern to C-level across Europe, the UAE and the Middle East
+
+
+## Free self-assessment tools
+- [Working styles quiz](https://www.darijamesko.com/individuals/working-styles/): 32 statements, result on screen only. Shows the main working style out of 4, Driver (red), Connector (yellow), Supporter (green) and Analyst (blue), the mix of all 4, how the person comes across to the other styles, and tips for work, feedback, stress and job interviews. Slovenian version: https://www.darijamesko.com/sl/individuals/working-styles/
+- [Conflict stage check](https://www.darijamesko.com/companies/conflict-check/): 10 questions for team leaders and HR. Maps a team conflict to Friedrich Glasl's 9 stages of conflict escalation in 3 groups (1 to 2 the team solves alone, 3 to 5 a structured conversation or workshop, 6 to 9 HR or outside help) and suggests what to do this week. An orientation tool. Slovenian version: https://www.darijamesko.com/sl/companies/conflict-check/
+- [ATS CV check](https://www.darijamesko.com/individuals/ats-check/): free CV checker for PDF and Word files that runs fully in the browser, the file never leaves the device. Scores the CV against common applicant tracking system rules (readable text, contact details, length, tables and columns, photos, section headings, numbers in achievements, weak phrases, dates, buzzwords) and compares it with a pasted job ad. Slovenian version: https://www.darijamesko.com/sl/individuals/ats-check/
 
 ## About
 - [About Darija Meško](https://www.darijamesko.com/about/)
@@ -40,3 +47,20 @@ Key facts:
 - [Salary negotiation: how to get paid what you deserve](https://www.darijamesko.com/blog/salary-negotiation-10-insider-strategies/)
 - [When AI can do everything, what is left for you?](https://www.darijamesko.com/blog/when-ai-can-do-everything/)
 - [Why you should never use ChatGPT for your CV](https://www.darijamesko.com/blog/why-you-should-never-use-chatgpt-for-your-cv/)
+
+## Frequently asked questions
+- What does a team workshop cost? Packages start at 1,600 EUR for a team of up to 10 people (Basic, 1 workshop). Advanced is 3,200 EUR and Premium is 4,500 EUR, both with 2 workshops and CliftonStrengths reports. You can add up to 5 more people to any package. Take the packages as a starting point, because I adapt to what your team needs.
+- Where and in which language do the workshops take place? Live at your office in Slovenia or online, in Slovenian or English. That makes them a good fit for international and mixed teams too.
+- Can you help a team with colleagues from different countries? Yes, this is one of my core topics. I use Erin Meyer's Culture Map and my own experience leading teams from India, the Philippines and Pakistan in Dubai and working in HR in Germany. We look at how directly people speak, criticise, disagree and build trust, so small misunderstandings stop turning into tension.
+- Is this just another teambuilding day? No. Every workshop is built around your team's real situations and ends with 3 to 5 team rules that the team writes itself, plus a summary for the leader. That way the change continues on Monday morning.
+- What happens before the workshop? We first talk, you and I, about what is happening in your team. Then your team fills in a short anonymous pulse survey, so I arrive prepared and already know where it hurts.
+- Will the leader see what each person said? No. The leader only receives the aggregated picture of the team, never individual answers. What is said in the room stays in the room.
+- How much does help with my CV cost? A CV rewrite is 60 EUR and a 60-minute 1:1 consultation is 50 EUR. The Basic package, with a CV rewrite, cover letter and a LinkedIn personal branding report, is regularly 150 EUR. Premium full career support is regularly 500 EUR. From time to time I offer the packages at a discount, so check the packages above for the current price.
+- Can I get a free review first? Yes. Send me your CV, LinkedIn profile and cover letter by email and you get an honest review with practical feedback you can use straight away.
+- Will my new CV get through ATS? Yes, that is the point. Every CV rewrite is built so that applicant tracking systems (ATS) read it easily, because many CVs are filtered out before a recruiter ever sees them.
+- Do you help with jobs in Slovenia and abroad? Yes. I help people find work in Slovenia, elsewhere in Europe and in the UAE, in Slovenian or English.
+- Should I just write my CV with ChatGPT? Use AI as a helper, not as the author. CVs written fully by AI tend to sound the same, and recruiters notice. I explain why in my post on ChatGPT and CVs.
+- Who will work on my documents? I do, personally. I am Darija Meško, an HR professional and recruiter with 12+ years of experience in Slovenia, Germany and the UAE, and I have hired or coached over 1,000 people into new jobs.
+
+## Povzetek v slovenščini
+Darija Meško (Thrive Through HR) je HR strokovnjakinja, kadrovnica in karierna svetovalka iz Slovenije z več kot 12 leti izkušenj v Sloveniji, Nemčiji in ZAE. Podjetjem v Sloveniji ponuja delavnice za ekipe in vodje o komunikaciji, reševanju konfliktov (Glaslovih 9 stopenj), delovnih stilih (DISC), čustveni inteligenci, CliftonStrengths in medkulturnem sodelovanju, v živo ali na spletu, v slovenščini ali angleščini. Paketi od 1.600 EUR. Posameznikom pomaga s prenovo življenjepisa za ATS, spremnim pismom, LinkedIn profilom in pripravo na razgovor. Paket Basic ima redno ceno 150 EUR in je občasno na voljo s popustom, pregled dokumentov je brezplačen. Slovenska stran: https://www.darijamesko.com/sl/

@@ -20,10 +20,18 @@ Key facts:
 - [Recruiting](https://www.darijamesko.com/companies/recruiting/): hiring from intern to C-level across Europe, the UAE and the Middle East
 
 
+
+
+
+
+
+
+
+
 ## Free self-assessment tools
 - [Working styles quiz](https://www.darijamesko.com/individuals/working-styles/): 32 statements, result on screen only. Shows the main working style out of 4, Driver (red), Connector (yellow), Supporter (green) and Analyst (blue), the mix of all 4, how the person comes across to the other styles, and tips for work, feedback, stress and job interviews. Slovenian version: https://www.darijamesko.com/sl/individuals/working-styles/
-- [Conflict stage check](https://www.darijamesko.com/companies/conflict-check/): 10 questions for team leaders and HR. Maps a team conflict to Friedrich Glasl's 9 stages of conflict escalation in 3 groups (1 to 2 the team solves alone, 3 to 5 a structured conversation or workshop, 6 to 9 HR or outside help) and suggests what to do this week. An orientation tool. Slovenian version: https://www.darijamesko.com/sl/companies/conflict-check/
-- [ATS CV check](https://www.darijamesko.com/individuals/ats-check/): free CV checker for PDF and Word files that runs fully in the browser, the file never leaves the device. Scores the CV against common applicant tracking system rules (readable text, contact details, length, tables and columns, photos, section headings, numbers in achievements, weak phrases, dates, buzzwords) and compares it with a pasted job ad. Slovenian version: https://www.darijamesko.com/sl/individuals/ats-check/
+- [Conflict stage check](https://www.darijamesko.com/companies/conflict-check/): 13 questions for team leaders and HR. Maps a team conflict to Friedrich Glasl's 9 stages of conflict escalation in 3 groups (1 to 2 the team solves alone, 3 to 5 a structured conversation or workshop, 6 to 9 HR or outside help) and suggests what to do this week. An orientation tool. Slovenian version: https://www.darijamesko.com/sl/companies/conflict-check/
+- [ATS CV check](https://www.darijamesko.com/individuals/ats-check/): free CV checker for PDF and Word files that runs fully in the browser, the file never leaves the device. Scores the CV against common applicant tracking system rules: whether the CV names the functions of its field (for example talent acquisition, payroll or onboarding in HR), readable text, contact details, length up to 3 pages, tables and columns, photos, section headings, a summary, numbers in achievements, weak phrases, dates and buzzwords and compares it with a pasted job ad. Slovenian version: https://www.darijamesko.com/sl/individuals/ats-check/
 
 ## About
 - [About Darija Meško](https://www.darijamesko.com/about/)

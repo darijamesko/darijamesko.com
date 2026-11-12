@@ -851,7 +851,7 @@ header.top .wrap{max-width:1320px}.brand small{white-space:nowrap}
 </div>
 <script>
 /* Tracking settings. aw: Google Ads tag id (AW-...). awLead: conversion for company enquiries. awBuy: optional purchase conversion. */
-window.DM={ph:'phc_x4uxtR9oLz8bVYSPKpAZbhcDF2ffE8BBa2mBfM7sh2YF',phHost:'https://eu.i.posthog.com',aw:'AW-18569594689',awLead:'AW-18569594689/sMAPCLTctrYdEMGO1pZF',awBuy:''};
+window.DM={ph:'phc_x4uxtR9oLz8bVYSPKpAZbhcDF2ffE8BBa2mBfM7sh2YF',phHost:'https://eu.i.posthog.com',aw:'AW-18569594689',awLead:'AW-18569594689/sMAPCLTctrYdEMGO1pZF',awBuy:'AW-18569594689/CDIwCI-477YdEMGO1pZF'};
 window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
@@ -872,9 +872,9 @@ gtag('set','ads_data_redaction',true);
     var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id='+DM.aw;document.head.appendChild(g);
     gtag('js',new Date());gtag('config',DM.aw);
   }
-  function track(ev,props,aw,val){
+  function track(ev,props,aw,val,tid){
     try{posthog.capture(ev,props||{});}catch(e){}
-    if(aw&&adsOn){var o={send_to:aw};if(val){o.value=val;o.currency='EUR';}gtag('event','conversion',o);}
+    if(aw&&adsOn){var o={send_to:aw};if(val){o.value=val;o.currency='EUR';}if(tid)o.transaction_id=tid;gtag('event','conversion',o);}
   }
   window.dmTrack=function(ev,props,isLead){track(ev,props,isLead?DM.awLead:null);};
   function decide(v){
@@ -895,7 +895,7 @@ gtag('set','ads_data_redaction',true);
     if(h.indexOf('mailto:')===0){var m=h.match(/subject=([^&]*)/);track('email_click',{subject:m?decodeURIComponent(m[1]):'',page:location.pathname},company?DM.awLead:null);}
     else if(h.indexOf('https://buy.stripe.com/')===0){var c=a.parentNode,t=null;while(c&&c!==document.body&&!(t=c.querySelector('h3,h2'))){c=c.parentNode;}track('checkout_click',{link:h.split('/').pop(),product:t?t.textContent.trim():'',page:location.pathname});}
   });
-  if(window.DM_PURCHASE){track('purchase',window.DM_PURCHASE,DM.awBuy,window.DM_PURCHASE.value);}
+  if(window.DM_PURCHASE){track('purchase',window.DM_PURCHASE,DM.awBuy,window.DM_PURCHASE.value,window.DM_PURCHASE.checkout_session);}
 })();
 </script>
 </body>

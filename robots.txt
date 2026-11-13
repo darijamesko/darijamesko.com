@@ -1,22 +1,31 @@
 User-agent: *
 Allow: /
+Disallow: /downloads/
 
 # AI assistants and search crawlers are welcome to read this site
 User-agent: GPTBot
 Allow: /
+Disallow: /downloads/
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /downloads/
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /downloads/
 User-agent: ClaudeBot
 Allow: /
+Disallow: /downloads/
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /downloads/
 User-agent: PerplexityBot
 Allow: /
+Disallow: /downloads/
 User-agent: Google-Extended
 Allow: /
+Disallow: /downloads/
 User-agent: Bingbot
 Allow: /
+Disallow: /downloads/
 
 Sitemap: https://www.darijamesko.com/sitemap.xml

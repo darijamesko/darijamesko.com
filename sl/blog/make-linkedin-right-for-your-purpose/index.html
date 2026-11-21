@@ -18,12 +18,9 @@
 <meta content="Prilagodite LinkedIn namenu, za katerega ga potrebujete | Darija Meško" property="og:title"/>
 <meta content="Vsi govorijo o osebni blagovni znamki, nihče pa ne razloži, kaj konkretno storiti, korak za korakom, kot da ste običajen človek s svojim življenjem." property="og:description"/>
 <meta content="https://www.darijamesko.com/sl/blog/make-linkedin-right-for-your-purpose/" property="og:url"/>
-<meta property="og:image" content="https://www.darijamesko.com/assets/og-blog.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Darija Meško dela na prenosniku pod oljko">
-<meta name="twitter:image" content="https://www.darijamesko.com/assets/og-blog.jpg">
+<meta content="https://www.darijamesko.com/assets/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="#2A0E28" name="theme-color"/>
 <link as="font" crossorigin="" href="/assets/fonts/lora-latin-400-normal.woff2" rel="preload" type="font/woff2"/>
@@ -580,7 +577,7 @@ gtag('set','ads_data_redaction',true);
   ph.init=function(t,c,n){ph._i.push([t,c,n]);};
   ['capture','register','opt_in_capturing','opt_out_capturing'].forEach(function(m){ph[m]=function(){ph.push([m].concat([].slice.call(arguments)));};});
   ph.init(DM.ph,{api_host:DM.phHost,defaults:'2026-08-30',cookieless_mode:'on_reject',person_profiles:'identified_only',
-    loaded:function(p){try{var s=p.get_explicit_consent_status();if(s==='pending'&&choice==='granted')p.opt_in_capturing({capture_event_name:false});if(s==='pending'&&choice==='denied')p.opt_out_capturing();}catch(e){}}});
+    loaded:function(p){try{var s=p.get_explicit_consent_status();if(s==='pending'&&choice==='granted')p.opt_in_capturing({capture_event_name:false});if(s==='pending'&&choice!=='granted')p.opt_out_capturing();}catch(e){}}});
   var sc=document.createElement('script');sc.async=true;sc.crossOrigin='anonymous';sc.src=DM.phHost.replace('.i.posthog.com','-assets.i.posthog.com')+'/static/array.js';document.head.appendChild(sc);
   function loadAds(){
     if(adsOn||!DM.aw)return;adsOn=true;
